@@ -6,7 +6,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics import classification_report
 
 # Step 1: Load and preprocess the data
-train_data = pd.read_csv('/Users/swastikanupam/Desktop/vscode/Amity Project/test.csv')  # Replace with the actual path to your training dataset
+train_data = pd.read_csv('/Users/swastikanupam/Desktop/vscode/Amity Project/test.csv')  
 
 # Preprocess the training data
 X_train = train_data['tweet']  # Input text (tweets)
@@ -45,7 +45,7 @@ history = model.fit(X_train_transformed, y_train_encoded, batch_size=64, epochs=
 model.history = history.history
 
 # Step 6: Predict on new test data
-test_data = pd.read_csv('test_dataset.csv')  # Replace with the actual path to your test dataset
+test_data = pd.read_csv('test_dataset.csv') 
 
 # Preprocess the test data
 X_test = test_data['tweet']  # Input text (tweets)
