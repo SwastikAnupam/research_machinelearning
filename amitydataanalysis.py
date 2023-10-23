@@ -5,8 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import MultiLabelBinarizer
 
 # Step 1: Load and preprocess the data
-data = pd.read_csv('/Users/swastikanupam/Desktop/vscode/Amity Project/test.csv')  # Replace with the actual path to your dataset
-
+data = pd.read_csv('/Users/swastikanupam/Desktop/vscode/Amity Project/test.csv')  
 # Preprocess the data
 X = data['tweet']  # Input text (tweets)
 y = data['labels']  # Labels
@@ -38,9 +37,9 @@ model = tf.keras.models.Sequential([
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 # Step 5: Train the model
-batch_size = 64  # Increase the batch size as desired
-epochs = 100  # Increase the number of epochs as desired
-max_iterations = 1000  # Maximum number of training iterations
+batch_size = 64  
+epochs = 100  
+max_iterations = 1000  
 
 iteration = 0
 while iteration < max_iterations:
